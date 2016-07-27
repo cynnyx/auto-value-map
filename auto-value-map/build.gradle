@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+group = 'com.github.cynnyx.auto.value'
+
+dependencies {
+    compile 'com.squareup:javapoet:1.7.0'
+    compile 'com.google.auto.value:auto-value:1.3-rc1'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'com.google.auto:auto-common:0.6'
+
+    testCompile 'junit:junit:4.11'
+    testCompile 'com.google.truth:truth:0.27'
+    testCompile 'com.google.testing.compile:compile-testing:0.9'
+    testCompile files(org.gradle.internal.jvm.Jvm.current().getToolsJar())
+}
