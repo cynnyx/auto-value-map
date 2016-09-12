@@ -15,6 +15,16 @@ Include the AutoValue: Map Extension in your project and add `public abstract Ma
 
 Now build your project and use the generated `toMap()` method in Foo.
 
+## Download
+
+Add a Gradle dependency:
+
+```groovy
+apt 'com.github.cynnyx:auto-value-map:1.0'
+```
+
+(Using the [android-apt](https://bitbucket.org/hvisser/android-apt) plugin)
+
 ## License
 
     Copyright 2016 Cynny
